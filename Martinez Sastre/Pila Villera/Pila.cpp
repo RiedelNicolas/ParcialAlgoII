@@ -6,7 +6,9 @@ Pila::Pila(){
 }
 
 Pila::~Pila(){
-
+	while(!estaVacia()){
+		desapilar();
+	}
 }
 
 void Pila::apilar(int elemento){
